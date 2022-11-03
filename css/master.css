@@ -713,10 +713,22 @@ aside ul li:hover a{
 .podetails .container{
     display: flex;
 } 
+@media (max-width:700px) {
+    .podetails .container{
+        display: flex;
+        flex-direction:column-reverse;
+    } 
+}
 .podetails .single-pro-image{
     width: 40%;
     /* flex: 1; */
     margin-right:50px ;
+}
+@media (max-width:700px) {
+    .podetails .single-pro-image{
+        width: 100%;
+        /* height: 400px; */
+    }
 }
 .small-img-group{
     display: flex;
@@ -731,11 +743,23 @@ aside ul li:hover a{
     width: 50%;
     padding-top: 30px;
 }
+@media (max-width:700px) {
+    .podetails .single-pro-details{
+        width: 100%;
+        padding-top: 30px;
+    }
+}
 .podetails .single-pro-details h4{
     padding: 40px 0 20px 0;
 }
 .podetails .single-pro-details h2{
     font-size: 26px;
+}
+@media (max-width:700px) {
+    .podetails .single-pro-details h4:first-child,
+    .podetails .single-pro-details h6{
+        text-align: center;
+    }
 }
 .podetails .single-pro-details select{
     display: block;
