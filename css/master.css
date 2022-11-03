@@ -246,7 +246,8 @@ button.white{
 }
 @media (max-width:410px){
     .feature .box{
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
 }
 .feature .box:hover{
@@ -312,6 +313,21 @@ button.white{
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
 }
+
+@media (max-width:576px){
+    .featured .wraper{
+        width: 90%;
+        margin: auto;
+    }
+}
+/* @media (max-width:410px){
+    .featured .box{
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+} */
 .featured .wraper .box:hover{
     box-shadow: 20px 20px 30px rgba(0 ,0,0,0.06);
 }
@@ -651,3 +667,95 @@ aside ul li:hover a{
 }
 
 /* aside */
+
+
+
+/* shop page */
+.hero-shope{
+    background-image: url(../img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.hero-shope h2,
+.hero-shope p{
+    color: #fff;
+}
+/* .pagination */
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+}
+.pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+/* .pagination */
+/* podetails */
+.podetails{
+    margin-top: 20px;
+}
+.podetails .container{
+    display: flex;
+} 
+.podetails .single-pro-image{
+    width: 40%;
+    /* flex: 1; */
+    margin-right:50px ;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.podetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+.podetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+.podetails .single-pro-details h2{
+    font-size: 26px;
+}
+.podetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.podetails .single-pro-details input {
+    width: 50px;
+    height: 20px;
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+    margin-right: 15px;
+    outline: none;
+}
+.podetails .single-pro-details button{
+    background-color: #088178;
+    color: white;
+}
+.podetails .single-pro-details p{
+    line-height: 1.6;
+}
+/* podetails */
+/* shop page */

@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="../css/master.css">
     <title>Shoping</title>
 </head>
 
 <body>
+    <base href="../">
     <!-- start header -->
     <header class="main-haeder" id="main-header">
         <!-- menu -->
@@ -19,8 +20,8 @@
                 <img src="img/logo.png" alt="" class="logo">
             </a>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="./page/Shope.html">Shope</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="Shope.html">Shope</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
@@ -34,8 +35,8 @@
             </a>
             <nav>
                 <ul id="navbar">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="./page/Shope.html">Shope</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="Shope.html">Shope</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
@@ -51,56 +52,19 @@
     <!-- end header -->
     <main>
         <!-- start hero -->
-        <section class="hero">
+        <section class="hero-shope">
             <div class="container">
-                <h4>Trade-in-offer</h4>
-                <h2>Super value deals</h2>
-                <h1>On all protected</h1>
+                <h2>#stayhome</h2>
                 <p>Save more with coupons & up to 70% off!</p>
-                <button>Shop Now</button>
             </div>
         </section>
         <!-- end hero -->
-        <!-- start feature -->
-        <section class="feature sec-p1">
-            <div class="container">
-                <div class="box">
-                    <img src="img/features/f1.png" alt="">
-                    <h6>Free Shipping</h6>
-                </div>
-                <div class="box">
-                    <img src="img/features/f2.png" alt="">
-                    <h6>Online Order</h6>
-                </div>
-                <div class="box">
-                    <img src="img/features/f3.png" alt="">
-                    <h6>Save Money</h6>
-                </div>
-                <div class="box">
-                    <img src="img/features/f4.png" alt="">
-                    <h6>Promotins</h6>
-                </div>
-                <div class="box">
-                    <img src="img/features/f5.png" alt="">
-                    <h6>Happy Sell</h6>
-                </div>
-                <div class="box">
-                    <img src="img/features/f6.png" alt="">
-                    <h6>F24/7 Support</h6>
-                </div>
-            </div>
-        </section>
-        <!-- end feature -->
         <!-- start featured products -->
         <section class="featured sec-p1">
             <div class="container">
-                <header>
-                    <h2>Featured Products</h2>
-                    <p>Summer Collection New Modren Disign</p>
-                </header>
                 <div class="wraper">
-                    <div class="box">
-                        <img src="./img/products/f1.jpg" alt="" onclick="window.location.href='./page/sprodect.html'">
+                    <div class="box" onclick="window.location.href='../page/sprodect.html'">
+                        <img src="./img/products/f1.jpg" alt="">
                         <div class="info">
                             <span>adidas</span>
                             <h5>Cartoon Astronaut T-Shirts</h5>
@@ -227,29 +191,6 @@
                         </div>
                         <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- end featured products -->
-        <!-- start banner -->
-        <section class="banner sec-m1">
-            <div class="container">
-                <div class="info">
-                    <h4>Repair Services</h4>
-                    <h2>Up to <span>70% off</span>- All t-Shirts & Accessories</h2>
-                    <button class="normal">Exlpore More</button>
-                </div>
-            </div>
-        </section>
-        <!-- end banner -->
-        <!-- start featured products2 -->
-        <section class="featured sec-p1">
-            <div class="container">
-                <header>
-                    <h2>Now Arrivals</h2>
-                    <p>Summer Collection New Modren Disign</p>
-                </header>
-                <div class="wraper">
                     <div class="box">
                         <img src="./img/products/n1.jpg" alt="">
                         <div class="info">
@@ -382,24 +323,11 @@
             </div>
         </section>
         <!-- end featured products2 -->
-        <!-- start banner2 -->
-        <section class="sm-banner sec-p1">
-            <div class="container">
-                <div class="banner-box">
-                    <h4>crazy deals</h4>
-                    <h2>Buy 1 get 1 free</h2>
-                    <span>The best classic dress is on sale at cara</span>
-                    <button class="white">Learn More</button>
-                </div>
-                <div class="banner-box banner-box2">
-                    <h4>Spring/summer</h4>
-                    <h2>upcomming season</h2>
-                    <span>The best classic dress is on sale at cara</span>
-                    <button class="white">Collection</button>
-                </div>
-            </div>
+        <section class="pagination sec-p1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
         </section>
-        <!-- end banner2 -->
         <!-- strat newsletters -->
         <section class="newsletters sec-p1 sec-m1">
             <div class="container">
@@ -470,7 +398,7 @@
         </div>
     </footer>
     <!-- start footer -->
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
